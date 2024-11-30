@@ -1,9 +1,18 @@
+/*
+ * Given an integer n, return a counter function. 
+ * This counter function initially returns n and
+ * then returns 1 more than the previous value every
+ * subsequent time it is called (n, n + 1, n + 2, etc).
+ */
+
+// Postfix Increment Syntax: returns a value and then increments it.
+
 function createCounter(n: number): () => number {
-    --n
     return function() {
-        return ++n
+        return n++
     }
 }
+
 
 /** 
  * const counter = createCounter(10)
@@ -11,3 +20,4 @@ function createCounter(n: number): () => number {
  * counter() // 11
  * counter() // 12
  */
+
