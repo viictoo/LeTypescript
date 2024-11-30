@@ -11,4 +11,3 @@ This repo contains code for the 30 days of  Leetcodes in Typescript challenge
 
 [2704-to-be-or-not-to-be.ts](2704-to-be-or-not-to-be.ts) Day3 To Be or Not To Be O(1)
 
-[2704-to-be-or-not-to-be.ts](2704-to-be-or-not-to-be.ts) Day3 To Be or Not To Be O(1)
