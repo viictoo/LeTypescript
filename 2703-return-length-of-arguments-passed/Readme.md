@@ -14,3 +14,5 @@ Write a function argumentsLength that returns the count of arguments passed to i
 
    * Space Complexity:
     The space complexity is O(n)O(n), where nn is the number of arguments passed to the function. This is because the arguments are stored in the args array, which grows linearly with the number of arguments.
+
+[https://leetcode.com/problems/return-length-of-arguments-passed/solutions/5722508/more-than-you-ever-wanted-to-know-about-this-topic](more that you need to know: rest parameters: arguments: arrow fn)
