@@ -1,10 +1,14 @@
 ## 2677 Chunk Array
 
+```
 console.log(Array.from('foo'));
 // Expected output: Array ["f", "o", "o"]
+```
 
+```
 console.log(Array.from([1, 2, 3], (x) => x + x));
 // Expected output: Array [2, 4, 6]
+```
 
 ## Problem Breakdown
 We are tasked with implementing a chunking function
@@ -71,8 +75,8 @@ require additional memory proportional to the size of the input array (`O(n)`).
 and doesn’t require the overhead of `Array.from()`. 
 However, the performance difference is negligible for smaller arrays.
 
-### Flexibility Both solutions allow for easy customization. For instance, if we
-needed to modify the function to include a padding strategy for uneven chunks
+### Flexibility Both solutions allow for easy customization. 
+For instance, if we needed to modify the function to include a padding strategy for uneven chunks
 (e.g., padding the last chunk with `null` values to match the chunk size), we
 could extend either approach without much difficulty. Using `Array.from()` can
 be more convenient for this because of its inherent flexibility in handling
@@ -101,11 +105,3 @@ in both performance and maintainability.
    - Arrays where the length is not divisible by the chunk size.
    - Arrays with non-primitive types (if `Chunkable` is complex).
 
-## Conclusion
-
-In this exercise, we’ve learned that chunking an array is a straightforward task
-that can be solved effectively with core JavaScript. Both solutions—using a
-`for` loop or `Array.from()`—are valid, but the choice should depend on your
-team’s coding standards and familiarity. Performance is not a major concern in
-typical use cases, but we must always keep an eye on edge cases and potential
-for code clarity.
